@@ -1,0 +1,15 @@
+package ejercicios;
+
+public class AppEjercicio4 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		
+		int[] array= {12,2,2,5,2};
+		int n=2;
+		System.out.println(Ejercicio4.busqueda(array, n));
+		
+	}
+
+}

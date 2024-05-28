@@ -1,0 +1,4 @@
+Juan:15
+Rodrigo:20
+Pedro:44
+Fernando:34

@@ -1,0 +1,27 @@
+package activad1;
+
+import java.util.Scanner;
+
+public class AppPrince {
+
+	 static float largo;
+	 static float ancho;
+	
+	public static Scanner leerdato =new Scanner(System.in); 
+	
+	public static void main(String[] args) {
+		
+		//PEDIR DATOS
+		System.out.println("Ingrese largo");
+		largo= leerdato.nextFloat();
+		
+		System.out.println("ingrese el anncho");
+		ancho = leerdato.nextFloat();
+		
+		//PROCESO
+		
+		
+		
+	}
+
+}

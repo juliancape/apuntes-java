@@ -1,0 +1,173 @@
+package ejercicio1;
+
+
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.util.ArrayList;
+import java.util.Comparator;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Queue;
+import java.util.Scanner;
+import java.util.stream.Collectors;
+
+
+public class AppDomicilios {
+
+	private ArrayList<Domiciliario> listDomiciliarios;
+	private Queue<Reparto> colaReparto;
+	private Queue<Domicilio> colaDomicilio;
+	private Scanner leerDato= new Scanner(System.in);
+	
+	
+	
+	/**
+	 * @param listDomiciliarios
+	 * @param colaReparto
+	 * @param colaDomicilio
+	 */
+	public AppDomicilios() {
+		super();
+		this.listDomiciliarios = new ArrayList<Domiciliario>();
+		this.colaReparto = new LinkedList<>();
+		this.colaDomicilio = new LinkedList<>();
+	}
+
+
+	public void nuevoDomiciliario() {
+		System.out.println("Ingrese Identificacion ");
+		int id= leerDato.nextInt();
+		System.out.println("Ingrese Nombre ");
+		String nombre= leerDato.next();
+		System.out.println("Ingrese Apellido");
+		String apellido= leerDato.next();
+		System.out.println("Ingrese Año de Nacimiento");
+		int fNacimiento= leerDato.nextInt();
+		System.out.println("Ingrese Nacionalidad");
+		String nacionalidad=  leerDato.next();
+		System.out.println("Ingrese UPZ");
+		int upz=leerDato.nextInt();
+		
+		int[] entregas= {0,0,0,0,0,0,0};
+		long devengado=0;
+		long valorPagado=0;
+		
+		listDomiciliarios.add(new Domiciliario(id, nombre, apellido, fNacimiento, nacionalidad
+				, entregas, devengado, valorPagado, upz));
+	/*	try {
+			Files.write(Paths.get("domiciliario.txt"),
+					listDomiciliarios.stream().map(p ->
+					p.toString()).collect(Collectors.toList()));
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			System.out.println("F");
+			e.printStackTrace();
+		}*/
+		
+		listDomiciliarios.forEach(System.out::println);
+	}
+	
+	
+	public  List<Domiciliario> importarListaDomiciliarios(String fileName) {
+	//List<Domiciliario> listaD= new ArrayList<Domiciliario>();
+	
+	int[] dias= new int[] {0,0,0,0,0,0,0};
+	
+	
+	try {
+		listDomiciliarios= (ArrayList<Domiciliario>) Files.lines(Paths.get(fileName))
+				.map(l-> new Domiciliario(Integer.parseInt(l.split(";")[0]),
+						l.split(";")[1], l.split(";")[2],
+						Integer.parseInt(l.split(";")[3]),
+						l.split(";")[4],dias, Long.parseLong(l.split(";")[5]),
+						Long.parseLong(l.split(";")[6]), 
+						Integer.parseInt(l.split(";")[7])))
+						.collect(Collectors.toList());
+	} catch (Exception e) {
+		System.out.println("F");
+	}
+	
+	Comparator<Domiciliario> id=(p1,p2)->Integer.compare(p1.getId(), p2.getId());
+	listDomiciliarios.stream().sorted(id).forEach(System.out::println);
+	return listDomiciliarios;
+	
+}
+
+
+	public void agregarRepartos() {
+		System.out.println("Referencia");
+		int nReparto=leerDato.nextInt();
+		System.out.println("UPZ");
+		int upz= leerDato.nextInt();
+		System.out.println("Descripcion del producto");
+		String descripcion=leerDato.next();
+		String datosCliente= leerDato.next();
+		
+		colaReparto.add(new Reparto(nReparto, descripcion, datosCliente, upz));
+		
+		
+	}
+	
+	
+	public Queue<Reparto> asignarReparto() {
+		
+		Comparator<Domiciliario> upz=(p1,p2)->Integer.compare(p1.getUpz(), p2.getUpz());
+	//	listDomiciliarios.stream().sorted(upz).forEach(System.out::println);
+		
+		
+		
+		//for (int i = 0; i < colaReparto.size(); i++) {
+			for (Domiciliario domiciliario : listDomiciliarios) {
+				
+				if (domiciliario.getUpz()==colaReparto.peek().getUpz()) {
+				colaDomicilio.add(new Domicilio(domiciliario.getId(), new Reparto(colaReparto.peek().getnReparto(),
+						colaReparto.peek().getDescripcion(), colaReparto.peek().getDatosCliente(),
+						colaReparto.peek().getUpz()), false, (int) ((Math.random()*(1 -8))+8)));
+				colaReparto.poll();
+				}
+				else {
+					System.out.println("Lo sentimos, no hay cobertura de domicilios para la UPZ "
+				+ colaReparto.peek().getUpz()+".   DOMICILIO CANCELADO\n");
+				}
+				
+				colaDomicilio.forEach(System.out::println);
+			}
+			
+	//	}
+	
+		
+		
+		
+	/*	
+		for (Reparto reparto : colaReparto) {
+			int a=  colaReparto.peek().getUpz();
+			//int b= (int) listaDomi.stream().filter(p->p.getUpz()==a).count();
+			if ((int) listaDomi.stream().filter(p->p.getUpz()==a).count()==0) {
+				System.out.println("No hay ningun domiciliario por esa zona");
+			}
+			else {
+				listaDomi.contains(a);
+			}
+			
+		}
+		*/
+		
+		
+		
+		return colaReparto;
+		
+	}
+	
+	public void agregarRepartosRapido() {
+			
+		colaReparto.add(new Reparto(111, "carro", "Juan", 1));
+		colaReparto.add(new Reparto(333, "camiseta", "Julian", 2));
+		colaReparto.add(new Reparto(444, "pc", "Jennifer", 3));
+		colaReparto.forEach(System.out::println);
+		
+		
+	}
+	
+
+	
+}

@@ -1,0 +1,12 @@
+package ejercicios;
+
+public class AppEjercicio3 {
+
+	public static void main(String[] args) {
+		
+		int[] arrayA= {5,10,2,88,3,5};
+		Punto3.diferencia(arrayA);
+		
+	}
+	
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename local variable &apos;mapaBytes&apos; in &apos;operacion.MainHash.main(...)&apos; to &apos;BytesArchivo&apos;&#x0D;&#x0A;- Original project: &apos;Algoritmos11Hash&apos;&#x0D;&#x0A;- Original element: &apos;operacion.MainHash.main(String[]).mapaBytes&apos;&#x0D;&#x0A;- Renamed element: &apos;mapaBytes&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename local variable &apos;mapaBytes&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src&lt;operacion{MainHash.java[MainHash~main~\[QString;@mapaBytes!204!220!211!219!\[B!0!false" name="BytesArchivo" references="true" stamp="1634075044787" version="1.0"/>
+</session>

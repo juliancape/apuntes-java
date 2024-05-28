@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;Grafo&apos; to &apos;grafo&apos;&#x0D;&#x0A;- Original project: &apos;EstructurasDatosTaller3Definitivo&apos;&#x0D;&#x0A;- Original element: &apos;EstructurasDatosTaller3Definitivo/src/Grafo&apos;&#x0D;&#x0A;- Renamed element: &apos;EstructurasDatosTaller3Definitivo/src/grafo&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;Grafo&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;Grafo" name="grafo" qualified="false" references="true" stamp="1633926805737" textual="false" version="1.0"/>
+</session>

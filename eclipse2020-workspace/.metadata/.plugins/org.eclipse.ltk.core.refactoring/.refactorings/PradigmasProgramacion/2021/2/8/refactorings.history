@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;arreglo_Dinamico.ArrayList&apos; to &apos;EjemploArrayList&apos;&#x0D;&#x0A;- Original project: &apos;PradigmasProgramacion&apos;&#x0D;&#x0A;- Original element: &apos;arreglo_Dinamico.ArrayList&apos;&#x0D;&#x0A;- Renamed element: &apos;arreglo_Dinamico.EjemploArrayList&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;ArrayList&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;arreglo_Dinamico{ArrayList.java[ArrayList" matchStrategy="1" name="EjemploArrayList" qualified="false" references="true" similarDeclarations="false" stamp="1613487685513" textual="false" version="1.0"/>
+</session>

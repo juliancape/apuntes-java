@@ -1,0 +1,10 @@
+package activad1;
+
+public class AppPrince {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

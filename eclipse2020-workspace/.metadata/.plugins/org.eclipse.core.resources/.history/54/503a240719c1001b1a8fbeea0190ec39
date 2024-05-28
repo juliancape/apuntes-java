@@ -1,0 +1,17 @@
+package ejercicio1;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		AppDomicilios app= new AppDomicilios();
+		
+		app.importarListaDomiciliarios("domiciliario.txt");
+		//app.nuevoDomiciliario();
+		app.agregarRepartosRapido();
+		app.asignarReparto();
+		
+
+	}
+
+}

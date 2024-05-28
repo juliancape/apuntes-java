@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename method &apos;operacion.Warshall.impirmirMatriz()&apos; to &apos;imprimirMatriz&apos;&#x0D;&#x0A;- Original project: &apos;EstructurasDatosWarshall&apos;&#x0D;&#x0A;- Original element: &apos;operacion.Warshall.impirmirMatriz()&apos;&#x0D;&#x0A;- Renamed element: &apos;operacion.Warshall.imprimirMatriz()&apos;&#x0D;&#x0A;- Update references to refactored element" delegate="false" deprecate="false" description="Rename method &apos;impirmirMatriz&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.method" input="/src&lt;operacion{Warshall.java[Warshall~impirmirMatriz" name="imprimirMatriz" references="true" stamp="1635171711611" version="1.0"/>
+</session>

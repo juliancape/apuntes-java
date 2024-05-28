@@ -1,0 +1,29 @@
+package ejercicios;
+/**
+ * 
+ * @author Julian Cardenas
+ * @since 30-01-21
+ *
+ */
+public class Punto3 {
+
+	public static int diferencia (int [] arrayA) {
+		int i;
+		int[] arrayB;
+			for ( i = 0; i < arrayA.length; i++) {
+				if (i != 0) {
+					arrayB[i]=arrayA[i]-arrayA[i+1];
+					
+				}else {
+					break;
+				}
+			
+			
+		}
+		
+		
+		
+		return arrayB[i];
+	}
+	
+}

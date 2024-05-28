@@ -1,0 +1,6 @@
+1002 Julian Cardenas julian@org julian@ 3208147070 M 18 ingenieria 1233
+1001 Andres Godoy andres@org andres@ 3208404224 M 20 derecho 1212
+1504 Juana Velez juana@org juana@ 3338405345 F 17 diseño 4444
+2211 Dana Velasquez dana@org dana@ 3229402958 F 22 ingenieria 1111
+1840 Santiago Perez santiago@org santiago@ 3218593057 M 19 ciencias 5531
+1650 David Leon david@org david@ 3409135048 M 16 diseño 1000

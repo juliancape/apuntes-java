@@ -1,0 +1,47 @@
+package probarAleatorio;
+
+import java.util.LinkedList;
+import java.util.Queue;
+import java.util.Stack;
+
+public class Aleatorio {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	/*	for (int i = 0; i < 50; i++) {
+			int peso= (int) ((Math.random()*(1 -8))+8);
+			System.out.println(peso);
+		}
+		*/
+		Queue<Integer> cola=new LinkedList();
+
+        cola.offer(3);
+
+        cola.add(14);
+
+        cola.offer(12);
+
+        cola.add(7);
+
+        cola.offer(10);
+
+        System.out.println("Cola llena: " + cola);
+
+       
+
+      while(cola.remove()!=null){
+
+            System.out.println(cola.peek());
+
+        }
+
+       while(cola.poll()!=null){
+
+            System.out.println(cola.peek());
+
+        }
+		
+	}
+
+}

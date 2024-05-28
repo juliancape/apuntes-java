@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;TDACola.java&apos; to &apos;Actividad6Colas/src/ejercicio1&apos;&#x0D;&#x0A;- Original project: &apos;Pilas&apos;&#x0D;&#x0A;- Destination element: &apos;Actividad6Colas/src/ejercicio1&apos;&#x0D;&#x0A;- Original element: &apos;colaTda.TDACola.java&apos;" description="Copy compilation unit" destination="=Actividad6Colas/src&lt;ejercicio1" element1="/src&lt;colaTda{TDACola.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1618417504886" units="1" version="1.0"/>
+</session>

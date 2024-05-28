@@ -1,0 +1,3 @@
+30010;pepe;velasquez;2000;colombiana;0;0;1
+15000;juan;velez;2001;cubano;0;0;2
+40005;camilo;torres;2002;colombiano;0;0;3

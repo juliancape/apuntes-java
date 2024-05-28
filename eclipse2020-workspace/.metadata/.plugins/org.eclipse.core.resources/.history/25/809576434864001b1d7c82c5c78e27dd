@@ -1,0 +1,31 @@
+package ejercicios;
+
+public class Ejercicio4 {
+	
+	
+	
+	public static int[] busqueda(int[] array, int n) {
+		
+		
+		int[] arrayB= {0,0,0};
+		int j=0;
+		for (int i = 0; i < array.length; i++) {
+			if (n==array[i]) {
+				
+				arrayB[j]=i;
+				j++;
+				
+				
+				
+			}
+		}
+		for (int i = 0; i < array.length; i++) {
+			for (int k = 0; k < arrayB.length; k++) {
+				System.out.println(arrayB);
+			}
+		}
+		
+		return arrayB ;
+	}
+
+}

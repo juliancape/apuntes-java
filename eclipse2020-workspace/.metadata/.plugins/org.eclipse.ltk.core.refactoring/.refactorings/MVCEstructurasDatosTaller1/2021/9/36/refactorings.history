@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 3 packages to &apos;MVCEstructurasDatosTaller2/src&apos;&#x0D;&#x0A;- Original project: &apos;MVCEstructurasDatosTaller1&apos;&#x0D;&#x0A;- Destination element: &apos;MVCEstructurasDatosTaller2/src&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     MVCEstructurasDatosTaller1/src/modelo&#x0D;&#x0A;     MVCEstructurasDatosTaller1/src/vista&#x0D;&#x0A;     MVCEstructurasDatosTaller1/src/control" description="Copy packages" destination="=MVCEstructurasDatosTaller2/src" element1="/src&lt;modelo" element2="/src&lt;vista" element3="/src&lt;control" flags="589830" fragments="3" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1630528845020" version="1.0"/>
+</session>
